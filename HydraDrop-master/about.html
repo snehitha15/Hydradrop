@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="about.css">
+    <style>
+      body{
+        background-image: url(backgroung2.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+       .responsive-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .content-container {
+            text-align: center;
+        }
+
+        .image-container {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 5px;
+            margin: 60px;
+        }
+
+        pre {
+            color: black;
+            font-family: 'Lucida Sans';
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="home.html" class="active"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="shoping.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Shop Products</a>
+    <a href="brands.html"><i class="fa fa-tint" aria-hidden="true"></i>
+      Brands</a>
+      <a href="about.html"><i class="fa fa-phone" aria-hidden="true"></i>
+        Contact us</a>
+    <a href="login.html" class="split"><i class="fa fa-fw fa-user"></i> Login</a>
+    <a href="#about" class="split"><i class="fa fa-search" aria-hidden="true"></i>
+    </a>
+    <a href="cart.html" class="split"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    </a>
+  </div>
+    <h3> HydraDrop</h3>
+    <h1><b>About Us</b></h1>
+    <div class="content-container">
+        <div class="image-container">
+            <img src="about_img1.png" alt="Fast Delivery">
+        </div>
+        <div class="image-container">
+            <img src="about_img2.png" alt="Fast Delivery">
+        </div>
+        <div class="image-container">
+            <img src="about_img3.png" alt="Fast Delivery">
+        </div>
+    </div>
+    <h1>Who Are We?</h1>
+    <h3>
+        <pre> HydraDrop is a drinking water logistic company, and its services are backed by 
+            a strong and agile delivery network. When it comes to offering branded bottled 
+            water delivery services in Hyderabad, we provide our customers with multiple 
+            options to choose from. We deliver the cans as per your delivery schedule.</pre>
+    </h3>
+    <div class="responsive-image">
+        <img src="aboutimg.png" alt="About image">
+    </div>
+    <h3>Contact Us</h3>
+    <div class="contact-box">
+        <br>
+        <div class="contact-info">
+            <div>
+                <p><pre><b>Address</b><br><br>
+                    ILM Water Solutions Pvt Ltd,
+                    SriRam Colony - Narsingi, 
+                    Hyderabad 500008</pre></p>
+            </div>
+            <div class="social-icons">
+                <p><b>Follow Us</b></p><br><br>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div>
+                <p><pre><b>Contact</b><br><br>
+                    +91 93923 16933
+                    contact@paanipaani.com</pre></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><br>
+        <pre>&copy;copyright 2023 by HydraDrop - Product Of ILM Water Solutions Pvt Ltd
+         Privacy Policy | Terms and Conditions
+        Powered By ILM Infosoft</pre>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+            // Retrieve username from localStorage
+            const loggedInUser = localStorage.getItem('loggedInUser');
+
+            const loginBtn = document.getElementById('loginBtn');
+
+            if (loggedInUser) {
+                loginBtn.innerHTML = `<i class="fa fa-fw fa-user"></i> ${loggedInUser}`;
+                loginBtn.href = "#"; // Optionally change the href
+            }
+        });
+    </script>
+</body>
+</html>
