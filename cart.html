@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cart.css">
+    <style>
+        .description {
+            display: inline-block;
+            margin-left: 150px;
+        }
+
+        .description img,
+        .description span {
+            vertical-align: middle;
+        }
+
+        .img1 {
+            width: 45px;
+            height: 45px;
+        }
+
+        .img2 {
+            width: 35px;
+            height: 35px;
+        }
+
+        .img3 {
+            width: 35px;
+            height: 35px;
+        }
+
+        .description span {
+            font-size: 1.2em;
+            margin-left: 10px;
+        }
+        .about {
+            color: black;
+            font-size: large;
+           margin-left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="cart-container">
+            <h2>My Cart</h2>
+            <div id="cart"></div>
+            <a href="shoping.html"><button>Continue Shopping</button></a>
+        </div>
+
+        <div class="summary-container">
+            <div class="summary">
+                <p class="decor">PAYMENT</p>
+                <hr>
+                <div id="total">Total: $<span id="totalAmount">0.00</span></div>
+                <div id="discount">Discount: $<span id="discountAmount">0.00</span></div>
+                <div id="deliveryCharges">Delivery Charges: $<span id="deliveryChargesAmount">0.00</span></div>
+                <button onclick="checkout()">NEXT</button>
+            </div>
+        </div>
+    </div>
+    <p class="description">
+        <img src="delivery-truck.png" alt="Fast Delivery" class="img1">
+        <span ><b>Fast delivery</b></span>
+        <img src="rating.png" alt="Fast Delivery" class="img2">
+        <span ><b>Five star quality</b></span>
+        <img src="security.png" alt="Fast Delivery" class="img3">
+        <span ><b>Highly Secured</b></span>
+    </p>
+    <hr>
+    <div class="about">
+        <a href="about.html" class="about"><b>Need Help?Contact Us </b></a>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>

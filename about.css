@@ -1,0 +1,37 @@
+
+h3 {
+    color: orange;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Lucida Sans';
+    font-size:x-large;
+}
+.contact-box {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(21, 138, 138);
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: orange;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(21, 138, 118, 0.79);
+}

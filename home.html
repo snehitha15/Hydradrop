@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="about.css">
+<style>
+    #heading{
+        background-color: #ffffff00;
+        width:100%;
+        height: 70px;
+        padding-top: 20px;
+        font-size: 40px;
+        color: blueviolet;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.panel-heading{
+    background-color: rgb(214, 214, 19);
+    font-size: 20px;
+    text-align: center;
+   
+  }
+  .panel{
+    width: 400px;
+    position: relative;
+    margin-top:-200px ;
+    margin-left: 70px;
+    border: 2px solid black;
+  }
+body{
+  background-image: url(backgroung2.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  
+}  
+.desc{
+  width:600px;
+  position: relative;
+  left:550px;
+  top:130px
+  
+  
+}
+.a{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  text-align: center;
+}
+#para{
+  font-size: 20px;
+  justify-content: space-around;
+}
+.serves {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .service-container {
+      text-align: center;
+      max-width: 300px;
+    }
+
+    .service-image {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .service-text {
+      margin-top: 10px;
+    }
+.footer {
+            font-size: larger;
+            text-align: center;
+            width: 100%;
+            height: 150px;
+            background-color: rgba(21, 138, 118, 0.79);
+        }
+        pre{
+          font-size: 18px;
+          font-family:Arialsans-serif ;
+          text-align: center;
+          justify-content: space-around;
+        }
+        .responsive-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+
+        @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #56CCF2;
+background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+
+
+.user__info > small {
+  color: #666;
+}
+button {
+            background-color: #2f81ed;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-left: 550px;
+        }
+        
+        
+</style>
+</head>
+<body>
+<div id="heading" align="center"><img src="logo.png" height="40px" width="45px" style="border-radius: 50px;">      HYDRA DROP</div>
+<div class="topnav" id="myTopnav">
+  <a href="home.html" class="active"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="shoping.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Shop Products</a>
+  <a href="brands.html"><i class="fa fa-tint" aria-hidden="true"></i>
+    Brands</a>
+    <a href="about.html"><i class="fa fa-phone" aria-hidden="true"></i>
+      Contact us</a>
+      <a href="login.html" class="split" id="loginBtn">
+        <i class="fa fa-fw fa-user"></i> Login
+      </a>
+  <a href="#about" class="split"><i class="fa fa-search" aria-hidden="true"></i>
+  </a>
+  <a href="cart.html" class="split"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </a>
+</div>
+<div class="desc">
+  <h1 class="a">Water can delivery services in hyderabad</h1>
+  <p id="para" align="justify"><pre>Our online water can delivery service in Hyderabad is here 
+to make the entire process of ordering water cansconvenient and simple for you. 
+Paani paani water can delivery app allows you to order branded mineral water in 
+just a few taps! Be it Bisleri, Kinley, or Aquafinbrand, our home water delivery 
+service covers almost everything. Just place your order and choose a slot, we will
+ deliver the cans as per your convenience. We go the extra mile to ensure the purity 
+ and authenticity of the cans delivered to you. So, place your order right away!</pre></p>
+</div>
+<br><br><br><br>
+<div class="panel panel-primary" >
+  <div class="panel-heading" style="line-height: 30px;">Currently Serving in following areas in Hyderabad</div>
+ <div class="panel-body" style="background-color: white;">
+       <marquee style="height: 290px; width: 50%;" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+      <ul style="line-height: 30px;padding-left:100px;font-size: 20px;">
+         <li>Gachibowli</li> 
+         <li>Kondapur</li> 
+         <li>Hafizpet</li> 
+         <li>Miyapur</li> 
+         <li>Nizampet</li> 
+         <li>Kukatpally</li> 
+         <li>Hitech City</li> 
+         <li>Madhapur</li> 
+         <li>Ayyappa Society</li> 
+         <li>Jubilee Hills</li> 
+         <li>Banjara Hills</li> 
+         <li>Punjagutta</li> 
+         <li>Ameerpet</li> 
+         <li>Tolichowki</li> 
+         <li>Golconda</li> 
+         <li>Alkapur</li> 
+         <li>Manikonda</li> 
+         <li>Khajaguda</li> 
+          <li>Raidurgam</li>
+          <li>Narsingi</li> 
+    </ul></marquee></div>
+</div><br><BR><br><br>
+  
+<div>
+  <h1 align="center">Our Services</h1>
+
+  <div class="serves">
+    <div class="service-container">
+      <img src="services_img1.png" class="service-image" alt="Instant Paani">
+      <p><b>Instant paani</b></p>
+      <p class="service-text">Running out of drinking water? No worries! Just use our app’s Insta Paani feature and we will deliver water cans to your location in just 3 hours. We make it possible by connecting you to the nearest delivery vehicle.</p>
+    </div>
+
+    <div class="service-container">
+      <img src="services_img2.png" class="service-image" alt="Scheduled Paani">
+      <p><b>Scheduled Paani</b></p>
+      <p class="service-text">Get your drinking water needs sorted three days in advance by using our Scheduled Paani service. Our water delivery app will make sure the cans are delivered to your doorstep right on time, even if you have been busy the entire day.</p>
+    </div>
+
+    <div class="service-container">
+      <img src="services_img3.png" class="service-image" alt="Bulk orders">
+      <p><b>Bulk orders</b></p>
+      <p class="service-text">If you are planning to organize parties or events, Paani Lao’s water delivery services can come in handy. We accept bulk orders too! Besides our own brand of drinking water cans, we also provide other options like Kinley, Aquafina, and Bisleri.</p>
+    </div>
+  </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+document.addEventListener("DOMContentLoaded", function () {
+            // Retrieve username from localStorage
+            const loggedInUser = localStorage.getItem('loggedInUser');
+
+            const loginBtn = document.getElementById('loginBtn');
+
+            if (loggedInUser) {
+                loginBtn.innerHTML = `<i class="fa fa-fw fa-user"></i> ${loggedInUser}`;
+                loginBtn.href = "#"; // Optionally change the href
+            }
+        });
+        //localStorage.clear();
+</script>
+<div class="responsive-image">
+  <img src="homeimg.jpg" alt="About image">
+</div>
+<h3>FEED BACK</h3>
+<div class="container">
+  <div class="card">
+    <div class="card__header">
+     
+    </div>
+    <div class="card__body">
+      <span class="tag tag-blue">5 Star</span>
+      <h4>Hydration Made Easy!</h4>
+      <p>As a busy professional, having water delivered to my office has been a game-changer. The convenience of not having to lug heavy water bottles from the store is a relief, and the automatic delivery schedule ensures I never run out. The water itself is crisp and refreshing, and I love the eco-friendly approach with their reusable bottles. I highly recommend this service to anyone looking to simplify their hydration routine.</p>
+    </div>
+    <div class="card__footer">
+      <div class="user">
+        
+        <div class="user__info">
+          <h5>Sameer</h5>
+          <small>2h ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__header">
+      
+    </div>
+    <div class="card__body">
+      <span class="tag tag-brown">4 Star</span>
+      <h4>Reliable and Punctual</h4>
+      <p>This water delivery service has consistently been reliable and punctual. The delivery drivers are friendly, and I appreciate the text notifications I receive to track my deliveries. The water quality is excellent, and the pricing is competitive. I deducted one star because there was a slight hiccup in my billing cycle, but the customer service team was quick to address the issue. Overall, a dependable service that I would recommend to friends and family.</p>
+    </div>
+    <div class="card__footer">
+      <div class="user">
+        
+        <div class="user__info">
+          <h5>Laxman</h5>
+          <small>Yesterday</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card__header">
+      
+    </div>
+    <div class="card__body">
+      <span class="tag tag-red">5 Star</span>
+      <h4>Excellent Service!</h4>
+      <p>I have been using this water delivery service for several months now, and I am extremely satisfied with the level of service they provide. The water always arrives on time, and the delivery personnel are courteous and professional. The convenience of having fresh, clean water delivered to my doorstep has made a significant positive impact on my daily life. I highly recommend this service to anyone looking for a reliable water delivery solution.</p>
+    </div>
+    <div class="card__footer">
+      <div class="user">
+        
+        <div class="user__info">
+          <h5>Sheshi</h5>
+          <small>2d ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<form action="feedback.php" method="post">
+<textarea rows="4" cols="50">
+  enter your feedback
+</textarea>
+<button type="submit">Send Feedback</button>
+</form>
+<h3>Contact Us</h3>
+<div class="contact-box">
+    <br>
+    <div class="contact-info">
+        <div>
+            <p><pre><b>Address</b><br><br>
+                 Water Solutions Pvt Ltd,
+                SriRam Colony - Narsingi, 
+                Hyderabad 500008</pre></p>
+        </div>
+        <div class="social-icons">
+            <p><b>Follow Us</b></p><br><br>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div>
+            <p><pre><b>Contact</b><br><br>
+                +91 93923 16933
+                contact@paanipaani.com</pre></p>
+        </div>
+    </div>
+</div>
+<div class="footer"><br>
+    <pre>&copy;copyright 2023 by HydraDrop - Product Of  Water Solutions Pvt Ltd
+     Privacy Policy | Terms and Conditions
+    Powered By Vasavi</pre>
+</div>
+</body>
+</html>
